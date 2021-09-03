@@ -21,9 +21,12 @@ const display = (t) => {
   setInnerText(t.name, "city");
   setInnerText(t.main.temp, "temp");
   setInnerText(t.weather[0].main, "weather");
-
   //set weather icon
-
   const iconURL = `http://openweathermap.org/img/wn/${t.weather[0].icon}@2x.png`;
   console.log(t);
+
+  //eita re img> src attribute hishabe set korte hobe
+
+  const img = document.getElementById("icon");
+  img.setAttribute("src", iconURL);
 };

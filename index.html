@@ -18,7 +18,23 @@
       body {
         background: url(images/bg-image.jpg) no-repeat;
         background-size: cover;
+        opacity: 1;
         height: 100vh;
+      }
+
+      .copyright-footer {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: white;
+        font-weight: 500;
+      }
+
+      .copyright-footer a {
+        text-decoration: none;
+        color: #ec6e4c;
+
+        font-weight: 500;
       }
     </style>
   </head>
@@ -41,12 +57,22 @@
         </div>
       </form>
       <div class="weather-status text-white text-center">
-        <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="" />
-        <h1 id="city">Dhaka</h1>
-        <h3><span id="temp">38.06</span>&deg;C</h3>
-        <h1 class="lead" id="weather">Clouds</h1>
+        <img
+          id="icon"
+          src="https://openweathermap.org/img/wn/02d@2x.png"
+          alt=""
+        />
+        <h1 id="city">City</h1>
+        <h3><span id="temp">_._</span>&deg;C</h3>
+        <h1 class="lead" id="weather">Weather Condition</h1>
       </div>
     </div>
+    <footer class="copyright-footer">
+      <p>
+        OpenWeather API &copy;
+        <a href="https://github.com/mrx-arafat/Weather-API">Easin Arafat</a>
+      </p>
+    </footer>
     <script src="js/app.js"></script>
   </body>
 </html>
